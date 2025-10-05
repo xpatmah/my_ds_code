@@ -1,9 +1,11 @@
 package com.my.ds.code.list.demo;
 
-import com.my.ds.code.list.circular.CircularLinkedList;
-import com.my.ds.code.list.common.AbstractLinkedList;
-import com.my.ds.code.list.simple.DoublyLinkedList;
-import com.my.ds.code.list.simple.LinkedList;
+
+import com.my.ds.code.list.contract.AbstractLinkedList;
+import com.my.ds.code.list.impl.circularDoubly.CircularDoublyLinkedList;
+import com.my.ds.code.list.impl.circularSimple.CircularLinkedList;
+import com.my.ds.code.list.impl.doubly.DoublyLinkedList;
+import com.my.ds.code.list.impl.simple.LinkedList;
 
 
 public class LinkedListDemo {
@@ -47,5 +49,22 @@ public class LinkedListDemo {
         System.out.println("Search 200? " + cList.search(200));
         cList.deleteAtPosition(2);
         cList.display();
+
+        // Circular doubly
+        System.out.println("\n=== Circular Doubly Linked List ===");
+        CircularDoublyLinkedList cdConcrete = new CircularDoublyLinkedList();
+        AbstractLinkedList cdList = cdConcrete;
+        cdList.insertAtEnd(10);
+        cdList.insertAtEnd(20);
+        cdList.insertAtEnd(30);
+        cdList.insertAtBeginning(5);
+        cdList.insertAtPosition(15, 3);
+        cdList.display();
+        System.out.println("Size: " + cdList.size());
+        System.out.println("Search 20? " + cdList.search(20));
+        cdList.deleteAtPosition(2);
+        cdList.display();
+        // display backward is specific to CircularDoublyLinkedList:
+        cdConcrete.displayBackward();
     }
 }
