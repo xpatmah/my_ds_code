@@ -27,7 +27,7 @@ public class TrieImpl implements Trie {
     // --------------------------
     // Helpers
     // --------------------------
-    private int idx(char c) {
+    public int idx(char c) {
         return c - 'a';
     }
 

@@ -13,6 +13,8 @@ public interface Trie {
 
     boolean delete(String word);
 
+    int idx(char c);
+
     // recursive delete helper; returns true if parent should delete the link to this node
     default boolean deleteRecursive(TrieNode current, String word, int depth) {
         if (current == null) return false;

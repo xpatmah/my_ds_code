@@ -185,6 +185,7 @@ public class AdjacencyListGraph<T> implements GraphInterface<T> {
         return dist;
     }
 
+    // Topological sort only works for directed acyclic a graph which has direction arrow and does not contain cycle.
     @Override
     public List<Vertex<T>> topologicalSort() {
         if (!directed) throw new UnsupportedOperationException("Topological sort only for directed graphs");
