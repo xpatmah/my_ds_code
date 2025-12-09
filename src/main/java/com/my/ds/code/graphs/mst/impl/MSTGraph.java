@@ -8,9 +8,9 @@ import java.util.*;
 /* -------------------------
    Graph (undirected, weighted)
    ------------------------- */
-public class Graph<T> {
+public class MSTGraph<T> {
     private final Map<Vertex<T>, List<Edge<T>>> adj;
-    public Graph() { adj = new LinkedHashMap<>(); }
+    public MSTGraph() { adj = new LinkedHashMap<>(); }
 
     public Vertex<T> addVertex(T label) {
         Vertex<T> v = new Vertex<>(label);

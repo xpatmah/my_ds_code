@@ -2,7 +2,7 @@ package com.my.ds.code.graphs.mst.demo;
 
 import com.my.ds.code.graphs.mst.domain.Edge;
 import com.my.ds.code.graphs.mst.domain.Vertex;
-import com.my.ds.code.graphs.mst.impl.Graph;
+import com.my.ds.code.graphs.mst.impl.MSTGraph;
 import com.my.ds.code.graphs.mst.impl.MST;
 
 import java.util.List;
@@ -13,7 +13,7 @@ import java.util.List;
 public class MSTDemo {
     public static void main(String[] args) {
         // Build sample graph (undirected, weighted)
-        Graph<String> g = new Graph<>();
+        MSTGraph<String> g = new MSTGraph<>();
         Vertex<String> A = g.addVertex("A");
         Vertex<String> B = g.addVertex("B");
         Vertex<String> C = g.addVertex("C");

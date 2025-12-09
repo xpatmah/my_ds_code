@@ -11,7 +11,7 @@ import java.util.*;
 public class MST {
 
     // Kruskal: returns list of edges in MST and total weight
-    public static <T> Pair<List<Edge<T>>, Double> kruskalMST(Graph<T> g) {
+    public static <T> Pair<List<Edge<T>>, Double> kruskalMST(MSTGraph<T> g) {
         List<Edge<T>> edges = g.edges();
         // sort by weight
         edges.sort(Comparator.comparingDouble(Edge::getWeight));
@@ -39,7 +39,7 @@ public class MST {
     }
 
     // Prim: returns list of edges in MST and total weight. start must be a vertex in graph
-    public static <T> Pair<List<Edge<T>>, Double> primMST(Graph<T> g, Vertex<T> start) {
+    public static <T> Pair<List<Edge<T>>, Double> primMST(MSTGraph<T> g, Vertex<T> start) {
         if (!g.contains(start)) throw new IllegalArgumentException("Start vertex not in graph");
 
         Set<Vertex<T>> inMST = new HashSet<>();
