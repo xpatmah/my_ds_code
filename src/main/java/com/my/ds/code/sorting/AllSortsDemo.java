@@ -14,6 +14,7 @@ public class AllSortsDemo {
         int[] a;
 
         a = AllSortsUtils.copy(sample); BubbleSort.bubbleSort(a); System.out.println("Bubble:   " + Arrays.toString(a));
+        a = AllSortsUtils.copy(sample); BubbleSort.bubbleSortRec(a,a.length,0); System.out.println("Bubble Recursive:   " + Arrays.toString(a));
         a = AllSortsUtils.copy(sample); SelectionSort.selectionSort(a); System.out.println("Selection:" + Arrays.toString(a));
         a = AllSortsUtils.copy(sample); InsertionSort.insertionSort(a); System.out.println("Insertion:" + Arrays.toString(a));
         a = AllSortsUtils.copy(sample); ShellSort.shellSort(a); System.out.println("Shell:    " + Arrays.toString(a));
