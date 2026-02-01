@@ -1,0 +1,5 @@
+The Open/Closed Principle (OCP) is a core tenet of object-oriented design in Java, stating that software entities
+(classes, modules, functions) should be open for extension but closed for modification.
+This means you should be able to add new functionality or change behavior by adding new code (extensions) without
+altering the existing, tested source code. Adhering to the OCP promotes system stability, maintainability,
+and scalability while minimizing the risk of introducing new bugs into existing functionality.

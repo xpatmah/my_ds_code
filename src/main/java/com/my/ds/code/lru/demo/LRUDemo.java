@@ -1,6 +1,6 @@
 package com.my.ds.code.lru.demo;
 
-import com.my.ds.code.cache.lru.impl.LRUCache;
+import com.my.ds.code.lru.impl.LRUCache;
 
 public class LRUDemo {
 

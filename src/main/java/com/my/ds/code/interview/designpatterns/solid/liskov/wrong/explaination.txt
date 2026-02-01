@@ -1,0 +1,2 @@
+we can use open close principle in store implementation is the same way to save an object into multiple data stores.
+And can assign the object in different store and if one of the stores breaks the contract, it will violate the liskov principle

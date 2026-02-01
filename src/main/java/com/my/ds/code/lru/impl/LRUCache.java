@@ -1,7 +1,7 @@
 package com.my.ds.code.lru.impl;
 
-import com.my.ds.code.cache.lru.contract.CacheInterface;
-import com.my.ds.code.cache.lru.domain.DoublyNode;
+import com.my.ds.code.lru.contract.CacheInterface;
+import com.my.ds.code.lru.domain.DoublyNode;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,0 +1,1 @@
+we can use open close principle in store implementation is the same way to save an object into multiple data stores. check in correct implementation

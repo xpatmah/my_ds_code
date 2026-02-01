@@ -1,0 +1,3 @@
+The Single Responsibility Principle (SRP) is one of the five core principles of object-oriented programming known as SOLID principles.
+ It states that a class should have only one reason to change, meaning it should have a single, well-defined responsibility or
+ job within the software system
