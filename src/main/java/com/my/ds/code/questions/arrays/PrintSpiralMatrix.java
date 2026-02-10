@@ -1,4 +1,4 @@
-package com.my.ds.code.questions.arrays.spiral_matrix;
+package com.my.ds.code.questions.arrays;
 
 import java.util.ArrayList;
 

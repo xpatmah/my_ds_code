@@ -1,7 +1,6 @@
 package com.my.ds.code.graphs.tsp.impl;
 
 import com.my.ds.code.graphs.tsp.domain.Vertex;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -62,7 +61,9 @@ public class TSPGraph<T> {
     }
 
     public List<Vertex<T>> getVertices() { return Collections.unmodifiableList(vertices); }
+
     public int size() { return vertices.size(); }
+
     public int indexOf(Vertex<T> v) { return vertices.indexOf(v); }
 
     // Convenience: fill complete graph with symmetric weights (useful for TSP demo)
